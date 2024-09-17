@@ -1,0 +1,26 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      changeDictionaryDict;
+}
+
+boundary
+{
+    "wedge.*"
+    {
+        type            wedge;
+        physicalType    wedge;
+    }
+    rocket
+    {
+        type            wall;
+        physicalType    wall;
+    }
+    side
+    {
+        type            slip;
+        physicalType    slip;
+    }
+}

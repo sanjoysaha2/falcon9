@@ -1,0 +1,49 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+
+#include        "inputs"
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform $speed;
+
+boundaryField
+{
+    inlet
+    {
+        type            supersonicFreestream;
+        pInf            $pressure;
+        TInf            $temperature;
+        UInf            $speed;
+        gamma           1.4; // Specific heat ratio
+        value           $internalField;
+    }
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      $internalField;
+        value           $internalField;
+    }
+    rocket
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    side
+    {
+        type            slip;
+    }
+    wedge0
+    {
+        type            wedge;
+    }
+    wedge1
+    {
+        type            wedge;
+    }
+}
