@@ -1,0 +1,58 @@
+solid 
+facet normal 0 0 1
+ outer loop
+  vertex 203.66008 57.5 57.5
+  vertex -46.33992 57.5 57.5
+  vertex -46.33992 -57.5 57.5
+ endloop
+endfacet
+facet normal 0 -0 1
+ outer loop
+  vertex 203.66008 57.5 57.5
+  vertex -46.33992 -57.5 57.5
+  vertex 203.66008 -57.5 57.5
+ endloop
+endfacet
+facet normal 0 -1 0
+ outer loop
+  vertex 203.66008 -57.5 -57.5
+  vertex 203.66008 -57.5 57.5
+  vertex -46.33992 -57.5 57.5
+ endloop
+endfacet
+facet normal 0 -1 0
+ outer loop
+  vertex 203.66008 -57.5 -57.5
+  vertex -46.33992 -57.5 57.5
+  vertex -46.33992 -57.5 -57.5
+ endloop
+endfacet
+facet normal 0 0 -1
+ outer loop
+  vertex -46.33992 57.5 -57.5
+  vertex 203.66008 57.5 -57.5
+  vertex 203.66008 -57.5 -57.5
+ endloop
+endfacet
+facet normal 0 0 -1
+ outer loop
+  vertex -46.33992 57.5 -57.5
+  vertex 203.66008 -57.5 -57.5
+  vertex -46.33992 -57.5 -57.5
+ endloop
+endfacet
+facet normal 0 1 0
+ outer loop
+  vertex -46.33992 57.5 -57.5
+  vertex -46.33992 57.5 57.5
+  vertex 203.66008 57.5 57.5
+ endloop
+endfacet
+facet normal 0 1 -0
+ outer loop
+  vertex -46.33992 57.5 -57.5
+  vertex 203.66008 57.5 57.5
+  vertex 203.66008 57.5 -57.5
+ endloop
+endfacet
+endsolid 
